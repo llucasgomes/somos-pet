@@ -1,0 +1,8 @@
+{
+	"*.ts?(x)": [
+		"eslint --fix",
+		"biome check --files-ignore-unknown=true",
+		"biome check --write",
+		"biome check --write --unsafe --no-errors-on-unmatched"
+	]
+}
