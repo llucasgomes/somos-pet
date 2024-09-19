@@ -14,7 +14,7 @@
 	"formatter": {
 		"formatWithErrors": true,
 		"lineEnding": "lf",
-		"lineWidth": 120,
+		"lineWidth": 80,
 		"attributePosition": "auto"
 	},
 	"linter": {
