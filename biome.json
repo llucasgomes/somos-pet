@@ -33,7 +33,8 @@
 				"useArrayLiterals": "off",
 				"useExhaustiveDependencies": "warn",
 				"useHookAtTopLevel": "error",
-				"useJsxKeyInIterable": "error"
+				"useJsxKeyInIterable": "error",
+				"noUnusedImports": "warn"
 			}
 		}
 	},
