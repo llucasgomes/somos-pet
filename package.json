@@ -7,7 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"prepare": "husky"
+		"prepare": "husky",
+		"commit": "cz"
 	},
 	"dependencies": {
 		"@radix-ui/react-icons": "^1.3.0",
@@ -28,6 +29,8 @@
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8",
 		"eslint-config-next": "14.2.12",
 		"husky": "^9.1.6",
@@ -35,5 +38,62 @@
 		"postcss": "^8",
 		"tailwindcss": "^3.4.1",
 		"typescript": "^5"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-emoji",
+			"cz-emoji": {
+				"types": [
+					{
+						"emoji": "🎉",
+						"code": ":tada: init:",
+						"description": "Initial commit",
+						"name": "init"
+					},
+					{
+						"emoji": "✨",
+						"code": ":sparkles: feat:",
+						"description": "Create a new feature",
+						"name": "feat"
+					},
+					{
+						"emoji": "🐛",
+						"code": ":bug: fix:",
+						"description": "Fix a bug",
+						"name": "fix"
+					},
+					{
+						"emoji": "♻️",
+						"code": ":recycle: refactor:",
+						"description": "Refactor code",
+						"name": "refactor"
+					},
+					{
+						"emoji": "🔧",
+						"code": ":wrench: chore:",
+						"description": "Change project configuration",
+						"name": "chore"
+					},
+					{
+						"emoji": "📝",
+						"code": ":book: docs:",
+						"description": "Add or update documentation",
+						"name": "docs"
+					},
+					{
+						"emoji": "💄",
+						"code": ":style: style:",
+						"description": "Add or update code styles",
+						"name": "style"
+					},
+					{
+						"emoji": "✅",
+						"code": ":white_check_mark: test:",
+						"description": "Create or change test cases",
+						"name": "test"
+					}
+				]
+			}
+		}
 	}
 }
